@@ -9,7 +9,7 @@ OUTDATE_TIME = 86400
 db = sqlite3.connect("/tmp/ddos.db3")
 c = db.cursor()
 try:
-c.execute("create table ddos (ip text unique,date integer);")
+ c.execute("create table ddos (ip text unique,date integer);")
 except:
 print "database exists"
 # blocking ips has more than CONCURRENCY_ALLOWED connections
